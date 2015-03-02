@@ -8,6 +8,12 @@ public class FizzBuzzerTest {
     private FizzBuzzer fizzBuzzer = new FizzBuzzer();
 
     @Test
+    public void executeShouldReturnFizzIfTheNumberContains7() {
+        assertEquals("Wizz", fizzBuzzer.execute(71));
+        assertEquals("Wizz", fizzBuzzer.execute(78));
+    }
+    
+    @Test
     public void executeShouldReturnFizzIfTheNumberContains5() {
         assertEquals("Buzz", fizzBuzzer.execute(51));
         assertEquals("Buzz", fizzBuzzer.execute(54));
@@ -16,7 +22,7 @@ public class FizzBuzzerTest {
     @Test
     public void executeShouldReturnFizzIfTheNumberContains3() {
         assertEquals("Fizz", fizzBuzzer.execute(31));
-        assertEquals("Fizz", fizzBuzzer.execute(73));
+        assertEquals("Fizz", fizzBuzzer.execute(83));
     }
     
     @Test
