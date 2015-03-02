@@ -11,8 +11,18 @@ public class FizzBuzzer {
             return "buzz";
         } else if (number % 3 == 0) {
             return "fizz";
+        } else if (contains(number, "3")) {
+            return "Fizz";
         } else {
             return String.valueOf(number);
+        }
+    }
+
+    private boolean contains(int number, String i) {
+        if (String.valueOf(number).contains(i)) {
+            return true;
+        } else {
+            return false;
         }
     }
 
