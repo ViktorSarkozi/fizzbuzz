@@ -5,10 +5,14 @@ public class FizzBuzzer {
     public String execute(int number) {
         if (number % 7 == 0) {
             return "Wizz";
+        } else if (contains(number, "7")) {
+            return "Wizz";
         } else if (number % 15 == 0) {
             return "fizzbuzz";
         } else if (number % 5 == 0) {
             return "buzz";
+        } else if (contains(number, "5")) {
+            return "Buzz";
         } else if (number % 3 == 0) {
             return "fizz";
         } else if (contains(number, "3")) {
