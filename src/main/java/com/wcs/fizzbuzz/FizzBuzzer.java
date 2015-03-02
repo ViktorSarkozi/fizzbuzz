@@ -9,8 +9,9 @@ public class FizzBuzzer {
             return "buzz";
         } else if (number % 3 == 0) {
             return "fizz";
+        } else {
+            return String.valueOf(number);
         }
-        throw new UnsupportedOperationException();
     }
 
 }
