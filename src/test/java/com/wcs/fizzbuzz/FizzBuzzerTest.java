@@ -8,6 +8,18 @@ public class FizzBuzzerTest {
     private FizzBuzzer fizzBuzzer = new FizzBuzzer();
 
     @Test
+    public void executeShouldReturnFizzIfTheNumberContains5() {
+        assertEquals("Buzz", fizzBuzzer.execute(51));
+        assertEquals("Buzz", fizzBuzzer.execute(54));
+    }
+    
+    @Test
+    public void executeShouldReturnFizzIfTheNumberContains3() {
+        assertEquals("Fizz", fizzBuzzer.execute(31));
+        assertEquals("Fizz", fizzBuzzer.execute(73));
+    }
+    
+    @Test
     public void executeShouldReturnWizzIfTheNumberIsDividableBy7() {
         assertEquals("Wizz", fizzBuzzer.execute(7));
         assertEquals("Wizz", fizzBuzzer.execute(21));
